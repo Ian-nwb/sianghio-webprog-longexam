@@ -48,6 +48,64 @@ Run linting:
 npm run lint
 ```
 
+## Push to GitHub Using Git Bash
+
+Open **Git Bash**, then go to the project root folder:
+
+Example
+```bash
+cd /c/Users/ACER/Desktop/cy.dev/cy.dev.reactjs/course-material/webprog/long-exam1
+```
+
+Check the files before committing:
+
+```bash
+git status
+```
+
+If this folder is not yet a Git repository, initialize it:
+
+```bash
+git init
+```
+
+Stage and commit the project:
+
+```bash
+git add .
+git commit -m "initial long-exam1"
+```
+
+Create a new repository on GitHub, then connect this local project to it. Replace `<github-repo-url>` with your repository URL:
+
+```bash
+git branch -M main
+git remote add origin <github-repo-url>
+git push -u origin main
+```
+
+Example GitHub URL format:
+
+```bash
+git remote add origin https://github.com/your-username/your-repository-name.git
+```
+
+If the `origin` remote already exists, update it instead:
+
+```bash
+git remote set-url origin <github-repo-url>
+git push -u origin main
+```
+
+For future updates after editing files:
+
+```bash
+git status
+git add .
+git commit -m "enhanced long-exam1"
+git push
+```
+
 ## Current Routes
 
 - `/` - Home page
