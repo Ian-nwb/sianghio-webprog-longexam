@@ -1,4 +1,4 @@
-# Robles Web Programming - Long Exam 1
+# CTWEBPGL Web Programming - Long Exam 1
 
 This repository contains a React frontend built with Vite, React Router, and Tailwind CSS.
 
