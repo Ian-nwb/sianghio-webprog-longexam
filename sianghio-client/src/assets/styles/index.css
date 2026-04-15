@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+@theme {
+  --font-arimo: "Arimo", ui-sans-serif, system-ui, sans-serif;
+}
+@layer base {
+  body {
+    @apply bg-zinc-100 text-zinc-900 antialiased font-arimo;
+  }
+  #root {
+    @apply min-h-screen;
+  }
+  h1, h2, h3, h4 {
+    @apply font-bold tracking-tight;
+  }
+}
