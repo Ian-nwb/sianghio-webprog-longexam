@@ -5,7 +5,7 @@ import products from '../../assets/product-content.js';
 const ProductListPage = () => {
   return (
     <div className="flex w-full flex-col gap-6">
-      <section className="border-y-2 border-blue-900 bg-blue-900 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      <section className="border-y-2 border-[#34418f] bg-[#34418f] px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-white">
           Products
         </p>
@@ -20,7 +20,7 @@ const ProductListPage = () => {
         </div>
       </section>
 
-      <section className="border-y-2 border-blue-900 bg-blue-900 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      <section className="border-y-2 border-[#34418f] bg-[#34418f] px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="mb-6">
           <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-white">
             Featured Products
@@ -32,6 +32,6 @@ const ProductListPage = () => {
       </section>
     </div>
   );
-}
+};
 
-export default ProductListPage
+export default ProductListPage;

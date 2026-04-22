@@ -4,12 +4,12 @@ import Footer from '../components/Footer';
 
 const Layout = () => {
   return (
-    <div className="min-h-screen bg-blue-900 text-zinc-900">
+    <div className="min-h-screen bg-[#34418f] text-zinc-900">
       <NavBar />
-      <main className="pb-16 pt-20">
+      <main className="pb-20 pt-24">
         <Outlet />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

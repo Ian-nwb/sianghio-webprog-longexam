@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import Button from '../../components/Button.jsx';
-import products from '../../assets/product-content.js'
+import products from '../../assets/product-content.js';
 
 function ProductPage() {
   const { name } = useParams();
@@ -9,7 +9,7 @@ function ProductPage() {
   if (!product) {
     return (
       <div className="flex w-full flex-col gap-6">
-        <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+        <section className="border-y-2 border-[#34418f] bg-zinc-50 px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h1 className="text-3xl font-bold text-zinc-900">Product not found</h1>
             <Button to="/products" className="mt-6">Back to Products</Button>
@@ -21,8 +21,7 @@ function ProductPage() {
 
   return (
     <div className="flex w-full flex-col gap-6">
-      
-      <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      <section className="border-y-2 border-[#34418f] bg-zinc-50 px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="max-w-3xl">
           <div className="mb-4">
             <Button to="/products">Back to Products</Button>
@@ -40,40 +39,36 @@ function ProductPage() {
         </div>
       </section>
 
-     <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-  <div className="mx-auto max-w-3xl">
-    
-    {/* This container now handles both the image and the placeholder styles */}
-    <div className="mb-8 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-[1.25rem] border-2 border-zinc-900 bg-zinc-200">
-      {product.image ? (
-        <img
-          src={product.image}
-          alt={product.title}
-          className="h-full w-full object-cover" 
-        />
-      ) : (
-        /* Placeholder content if no image exists */
-        <div className="flex h-24 w-24 items-center justify-center border-2 border-zinc-300 bg-zinc-100 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
-          Item
+      <section className="border-y-2 border-[#34418f] bg-zinc-50 px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <div className="mb-8 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-[1.25rem] border-2 border-[#34418f] bg-zinc-200">
+            {product.image ? (
+              <img
+                src={product.image}
+                alt={product.title}
+                className="h-full w-full object-cover" 
+              />
+            ) : (
+              <div className="flex h-24 w-24 items-center justify-center border-2 border-zinc-300 bg-zinc-100 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
+                Item
+              </div>
+            )}
+          </div>
+
+          <div className="prose prose-sm max-w-none space-y-4 text-zinc-700">
+            {product.content.map((paragraph, index) => (
+              <p key={index} className="text-base leading-7 text-zinc-700 whitespace-pre-wrap">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+
+          <div className="mt-8 border-t-2 border-zinc-900 pt-6">
+            <Button variant="primary" className="mr-3">Add to Cart</Button>
+            <Button to="/products">Back to Products</Button>
+          </div>
         </div>
-      )}
-    </div>
-
-    {/* Product Content / Description */}
-    <div className="prose prose-sm max-w-none space-y-4 text-zinc-700">
-      {product.content.map((paragraph, index) => (
-        <p key={index} className="text-base leading-7 text-zinc-700 whitespace-pre-wrap">
-          {paragraph}
-        </p>
-      ))}
-    </div>
-
-    <div className="mt-8 border-t-2 border-zinc-900 pt-6">
-      <Button variant="primary" className="mr-3">Add to Cart</Button>
-      <Button to="/products">Back to Products</Button>
-    </div>
-  </div>
-</section>
+      </section>
     </div>
   );
 }

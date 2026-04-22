@@ -1,14 +1,23 @@
 import Button from '../../components/Button';
 import logo from '../../assets/img/nubdexchange_logo.png';
+import tote from '../../assets/img/tote.jpg';
+import tumbler from '../../assets/img/tumbler.jpg';
+import lanyard from '../../assets/img/lanyard.jpg';
+import jacket from '../../assets/img/jacket.jpg';
 
 const AboutPage = () => {
   return (
     <div className="flex w-full flex-col gap-6">
-      <section className="border-y-2 border-blue-900 bg-blue-900 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      {/* About Store Section */}
+      <section className="border-y-2 border-[#34418f] bg-[#34418f] px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div className="rounded-3xl border-2 border-dashed border-blue-300 bg-blue-100 p-6">
             <div className="flex min-h-72 items-center justify-center rounded-[1.25rem] bg-blue-200">
-              <img src={logo} alt="BulldogEx" className="h-32 w-32 rounded-full border-2 border-blue-900 bg-white object-contain" />
+              <img 
+                src={logo} 
+                alt="BulldogEx" 
+                className="h-32 w-32 rounded-full border-2 border-[#34418f] bg-white object-contain" 
+              />
             </div>
           </div>
 
@@ -33,35 +42,36 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="border-y-2 border-blue-900 bg-blue-900 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      {/* Store Overview Section */}
+      <section className="border-y-2 border-[#34418f] bg-[#34418f] px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="mb-6">
           <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-white">
             Store Overview
           </p>
-          <h2 className="mt-2 text-2xl font-semibold text-white">Quick store blocks</h2>
+          <h2 className="mt-2 text-2xl font-semibold text-[#34418f]">Quick store blocks</h2>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="rounded-3xl border-2 border-blue-900 bg-blue-50 p-5">
-            <p className="text-2xl font-bold text-blue-900">08</p>
+          <div className="rounded-3xl border-2 border-[#34418f] bg-blue-50 p-6">
+            <p className="text-2xl font-bold text-[#34418f]">08</p>
             <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-blue-500">
               Items
             </p>
           </div>
-          <div className="rounded-3xl border-2 border-blue-900 bg-blue-50 p-5">
-            <p className="text-2xl font-bold text-blue-900">06</p>
+          <div className="rounded-3xl border-2 border-[#34418f] bg-blue-50 p-6">
+            <p className="text-2xl font-bold text-[#34418f]">06</p>
             <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-blue-500">
               Categories
             </p>
           </div>
-          <div className="rounded-3xl border-2 border-blue-900 bg-blue-50 p-5">
-            <p className="text-2xl font-bold text-blue-900">03</p>
+          <div className="rounded-3xl border-2 border-[#34418f] bg-blue-50 p-6">
+            <p className="text-2xl font-bold text-[#34418f]">03</p>
             <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-blue-500">
               Pickup Slots
             </p>
           </div>
-          <div className="rounded-3xl border-2 border-blue-900 bg-blue-50 p-5">
-            <p className="text-2xl font-bold text-blue-900">24</p>
+          <div className="rounded-3xl border-2 border-[#34418f] bg-blue-50 p-6">
+            <p className="text-2xl font-bold text-[#34418f]">24</p>
             <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-blue-500">
               Orders
             </p>
@@ -69,31 +79,32 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="border-y-2 border-blue-900 bg-blue-900 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      {/* Store Flow + Category Grid Section */}
+      <section className="border-y-2 border-[#34418f] bg-[#34418f] px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-blue-500">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-blue-200">
               Store Flow
             </p>
             <h2 className="mt-2 text-2xl font-semibold text-white">Stacked shopping wireframe</h2>
 
             <div className="mt-6 space-y-4">
-              <article className="rounded-3xl border-2 border-blue-900 bg-blue-50 p-5">
-                <h3 className="text-lg font-semibold text-blue-900">Curated Catalog</h3>
+              <article className="rounded-3xl border-2 border-[#34418f] bg-blue-50 p-6">
+                <h3 className="text-lg font-semibold text-[#34418f]">Curated Catalog</h3>
                 <p className="mt-3 text-sm leading-6 text-blue-600">
                   Products are grouped by daily need so shoppers can scan faster.
                 </p>
               </article>
 
-              <article className="rounded-3xl border-2 border-blue-900 bg-blue-50 p-5">
-                <h3 className="text-lg font-semibold text-blue-900">Simple Checkout</h3>
+              <article className="rounded-3xl border-2 border-[#34418f] bg-blue-50 p-6">
+                <h3 className="text-lg font-semibold text-[#34418f]">Simple Checkout</h3>
                 <p className="mt-3 text-sm leading-6 text-blue-600">
                   Product pages keep price, stock, and action buttons easy to find.
                 </p>
               </article>
 
-              <article className="rounded-3xl border-2 border-blue-900 bg-blue-50 p-5">
-                <h3 className="text-lg font-semibold text-blue-900">Pickup Ready</h3>
+              <article className="rounded-3xl border-2 border-[#34418f] bg-blue-50 p-6">
+                <h3 className="text-lg font-semibold text-[#34418f]">Pickup Ready</h3>
                 <p className="mt-3 text-sm leading-6 text-blue-600">
                   Store information stays direct for students who need quick order updates.
                 </p>
@@ -101,25 +112,42 @@ const AboutPage = () => {
             </div>
           </div>
 
-          <div className="rounded-3xl border-2 border-blue-900 bg-yellow-500 p-5">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-blue-500">
+          <div className="rounded-3xl border-2 border-[#34418f] bg-yellow-500 p-6">
+            <p className="text-[11px] !font-bold uppercase tracking-[0.28em] text-[#34418f]">
               Category Grid
             </p>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-blue-200">
-                <div className="h-12 w-12 border-2 border-blue-300 bg-blue-100" />
+            
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-blue-200 overflow-hidden">
+                <img 
+                  src={tote} 
+                  alt="Tote Bag" 
+                  className="h-full w-full object-cover" 
+                />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-blue-200">
-                <div className="h-12 w-12 border-2 border-blue-300 bg-blue-100" />
+              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-blue-200 overflow-hidden">
+                <img 
+                  src={tumbler} 
+                  alt="Tumbler" 
+                  className="h-full w-full object-cover" 
+                />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-blue-200">
-                <div className="h-12 w-12 border-2 border-blue-300 bg-blue-100" />
+              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-blue-200 overflow-hidden">
+                <img 
+                  src={lanyard} 
+                  alt="Lanyard" 
+                  className="h-full w-full object-cover" 
+                />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-blue-200">
-                <div className="h-12 w-12 border-2 border-blue-300 bg-blue-100" />
+              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-blue-200 overflow-hidden">
+                <img 
+                  src={jacket} 
+                  alt="Jacket" 
+                  className="h-full w-full object-cover" 
+                />
               </div>
             </div>
-            <Button to="/products" className="mt-5">View Products</Button>
+            <Button to="/products" className="mt-6">View Products</Button>
           </div>
         </div>
       </section>

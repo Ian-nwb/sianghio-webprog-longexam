@@ -2,10 +2,9 @@ import Button from './Button';
 
 const ProductCard = ({ product, index }) => {
   return (
-    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-      
+    <article className="rounded-3xl border-2 border-[#34418f] bg-zinc-100 p-6">
       {/* Image Container */}
-      <div className="flex aspect-4/3 items-center justify-center overflow-hidden rounded-[1.25rem] bg-zinc-200 border-2 border-zinc-900">
+      <div className="flex aspect-4/3 items-center justify-center overflow-hidden rounded-[1.25rem] bg-zinc-200 border-2 border-[#34418f]">
         {product.image ? (
           <img
             src={product.image}
@@ -13,7 +12,6 @@ const ProductCard = ({ product, index }) => {
             className="h-full w-full object-cover"
           />
         ) : (
-          /* Placeholder when no image */
           <div className="flex h-16 w-16 items-center justify-center border-2 border-zinc-300 bg-zinc-100 text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">
             Item
           </div>
@@ -29,7 +27,7 @@ const ProductCard = ({ product, index }) => {
       <p className="mt-3 text-sm leading-6 text-zinc-600">
         {product.content[0].substring(0, 120)}...
       </p>
-      <Button to={`/products/${product.name}`} className="mt-4">View Product</Button>
+      <Button to={`/products/${product.name}`} className="mt-6">View Product</Button>
     </article>
   );
 };

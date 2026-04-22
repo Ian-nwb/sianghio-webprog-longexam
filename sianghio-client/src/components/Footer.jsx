@@ -14,7 +14,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="border-t border-white bg-blue-900">
+    <footer className="border-t border-white bg-[#34418f]">
       <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-4">
           <div className="lg:col-span-2">
@@ -60,4 +60,4 @@ const Footer = () => {
   );
 };
 
-export default Footer
+export default Footer;
