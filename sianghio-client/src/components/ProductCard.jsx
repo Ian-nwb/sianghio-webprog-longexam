@@ -3,7 +3,6 @@ import Button from './Button';
 const ProductCard = ({ product, index }) => {
   return (
     <article className="rounded-3xl border-2 border-[#34418f] bg-zinc-100 p-6">
-      {/* Image Container */}
       <div className="flex aspect-4/3 items-center justify-center overflow-hidden rounded-[1.25rem] bg-zinc-200 border-2 border-[#34418f]">
         {product.image ? (
           <img
@@ -18,7 +17,6 @@ const ProductCard = ({ product, index }) => {
         )}
       </div>
 
-      {/* Product Info */}
       <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
         {product.category} {String(index + 1).padStart(2, '0')}
       </p>

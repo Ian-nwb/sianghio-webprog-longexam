@@ -8,7 +8,6 @@ const links = [
   
 ];
 
-// Existing styling for main nav links
 const navLinkClassName = ({ isActive }) =>
   [
     'rounded-full border-2 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] transition',
@@ -22,13 +21,11 @@ const NavBar = () => {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-blue-200 bg-yellow-500 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         
-        {/* Logo Section */}
         <NavLink to="/" className="flex items-center gap-3">
           <img src={logo} alt="NubdExchange" className="h-10 w-auto" />
           <span className="text-xl font-bold text-blue-900 tracking-tighter">Bulldog ExShop</span>
         </NavLink>
 
-        {/* Main Navigation */}
         <nav className="hidden items-center gap-2 md:flex">
           {links.map((link) => (
             <NavLink
@@ -42,7 +39,6 @@ const NavBar = () => {
           ))}
         </nav>
 
-        {/* Auth Waypoints */}
         <div className="flex items-center gap-4">
           <Link 
             to="/auth/signin" 
