@@ -8,7 +8,6 @@ import jacket from '../../assets/img/jacket.jpg';
 const AboutPage = () => {
   return (
     <div className="flex w-full flex-col gap-6">
-      {/* About Store Section */}
       <section className="border-y-2 border-[#34418f] bg-[#34418f] px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div className="rounded-3xl border-2 border-dashed border-blue-300 bg-blue-100 p-6">
@@ -41,8 +40,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Store Overview Section */}
       <section className="border-y-2 border-[#34418f] bg-[#34418f] px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="mb-6">
           <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-white">
